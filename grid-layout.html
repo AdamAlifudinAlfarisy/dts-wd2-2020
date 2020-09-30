@@ -8,25 +8,122 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
+	<!-- My CSS -->
+	<style type="text/css">
+		body {
+			font-family: 'Handlee', cursive;
+		}
+		h2 {
+			background-color: ;
+			text-align: center;
+		}
+		#contacs {
+			text-align: center;
+		}
+		img {
+			width: 50px;
+		}
+		p {
+			text-align: justify;
+		}
+		.fotoku {
+			width: 200px;
+		}
+		.copyright {
+			font-size: 8pt;
+			text-align: right;
+			padding-bottom: 10px;
+			color: grey;
+		}
+		#Judul {
+			text-align: center;
+		}
+		#isi {
+			text-align: justify;
+		}
+		#Judul {
+			background-color: #2d3892;
+			color: white;
+		}
+		#kontak {
+			background-color: #2d3892;
+			color: white;
+		}
+		#colside {
+			background-color: #8bbdde;
+			color: white;
+		}
+		#iniheader {
+			background-color: #2a3584;
+			color: white;
+		}
+	</style>
+
 
 	<title>Membuat Grid Layout</title>
 </head>
 <body>
-	<div class="container">		
-	<h1>DIGITAL TALENT | Grid Layout Bootstrap</h1>
+	<!-- Judul -->
+	<div class="container" id="Judul">		
+		<h1>DIGITAL TALENT | Grid Layout Bootstrap</h1>
+		<!-- Header -->
+		<div class="container" id="iniheader">
+			<div class="row">
+				<div class="col-lg">
+					<h2>Introduce</h2>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="container" style="background-color: #2CFF00 ">
-  <div class="row">
-    <div class="col-lg">
-      Ini Header
-    </div>
-  </div>
-</div>
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.5.1.slim.min"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+	<!-- Grid -->
+	<div class="container" id="colside">
+		<div class="row">
+			<div class="col-2">
+				<!-- Sidebar -->
+				<div class="sidebar">
+					<h3>Menu</h3>
+					<a href="#" class="sidebar-Home">Home</a> <br>
+					<a href="#" class="sidebar-About">About</a> <br>
+					<a href="#" class="sidebar-Kontak">Kontak</a>
+				</div>
+			</div>
+			<div class="col-10">
+				<!-- Konten -->
+				<div class="container" id="isi">
+					<h4>Tentang Saya</h4>
+					<img class="fotoku" src="img/foto.jpg" alt="foto">
+					<div class="section">
+						<p>Hai! saya <strong>Adam</strong>. Pengkodean telah merubah duniaku. Ini bukan hanya tentang aplikasi. Belajar kode telah memberikanku <i>keterampilan pemecahan masalah</i> dan cara untuk berkomunikasi dengan orang lain di tingkat teknis. Saya juga dapat mengembangkan situs web dan menggunakan keterampilan pengkodean saya untuk mendapatkan pekerjaan yang lebih baik. Dan saya sudah belajar semua itu di <strong>DTS 2020</strong> di mana mereka membangun diri Anda dan membuat Anda tetap termotivasi. Begabunglah dengan saya di perjalanan yang bermanfaat ini. Anda akan bersenang-senang, mendapatkan bantuan, dan belajar disepanjang jalan.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- kontak / footer -->
+	<div class="container" id="kontak">
+		<div class="row">
+			<div class="col-sm">
+				<div class="section" id="contacts">
+					<h1><span>Ikuti saya</span></h1>
+					<div>
+						<a href="https://www.facebook.com/profile.php?id=100005761908138">
+							<img alt="Facebook" src="img/fb.png"/>
+						</a>
+						<a href="https://www.instagram.com/adamalifudin/">
+							<img alt="Instagram" src="img/ig.png" />
+						</div>
+					</div>
+					<div class="copyright">
+						<p>&copy; 2020 My Blog. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	</body>
+	</html>
